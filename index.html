@@ -5,13 +5,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Запись</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="form-wrapper">
 		<form>
-			<input type="text" placeholder="имя" name="name">
-			<input type="text" placeholder="фамилия" name="surname">
-			<input type="text" placeholder="отчество" name="lastname">
+			<!-- фио 3 курса (школа, умтифсп, даик) максимум 100 -->
+			<input type="text" placeholder="Фамилия" name="surname">
+			<input type="text" placeholder="Имя" name="name">
+			<input type="text" placeholder="Отчество" name="lastname">
+
+			<select name="course">
+				<option value="default">выберите курс</option>
+				<option value="школа">школа</option>
+				<option value="умтифсп">умтифсп</option>
+				<option value="Дицаик">Дицаик</option>
+				<option value="Аллея мастеров">Аллея мастеров</option>
+			</select>
 			<button>Отправить</button>
 		</form>
 	</div>

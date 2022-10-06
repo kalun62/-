@@ -69,6 +69,12 @@ button:hover{
 	color: red;
 	margin: -20px 0 10px 0;
 }
+.finale{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
 
 @media(max-width:768px){
 	form{

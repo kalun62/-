@@ -7,6 +7,7 @@ const postLinkSheets = 'https://script.google.com/macros/s/AKfycbwkxhH79iYWUS-AN
 	select = document.querySelector('select')
 	
 let baseUsers = []
+let dataBaseUsers = []
 
 
 form.addEventListener('submit', function(e){
@@ -20,7 +21,7 @@ form.addEventListener('submit', function(e){
 		const formData = new FormData(form)
 		const data = Object.fromEntries(formData.entries())
 		console.log(data);
-		let fullName = data.surname + ' ' + data.name + ' ' + data.lastname
+		let fullName = data.surname.trim() + ' ' + data.name.trim() + ' ' + data.lastname.trim()
 
 		if(baseUsers.includes(fullName.toLowerCase())){
 			inputs.forEach(input => {
@@ -46,12 +47,20 @@ form.addEventListener('submit', function(e){
 	}
 })
 
+function infoCourses(){
+	select.addEventListener('change', function(){
+		// доделать заполнение информации
+	})
+}
+infoCourses()
+
 function finalWindow(){
 	let formWidth = form.getBoundingClientRect().width
-		let formHeight = form.getBoundingClientRect().height
-		form.style.width = formWidth + 'px'
-		form.style.height = formHeight + 'px'
-		form.innerHTML = `<div>Спасибо!</div>`
+	let formHeight = form.getBoundingClientRect().height
+	form.style.width = formWidth + 'px'
+	form.style.height = formHeight + 'px'
+	form.classList.add('finale')
+	form.innerHTML = `<div>Спасибо!</div>`
 }
 
 function errorLabels(input) {
@@ -60,7 +69,9 @@ function errorLabels(input) {
 		errorLabel.setAttribute('for', input.name)
 		errorLabel.classList.add('label')
 		errorLabel.innerHTML = `* Заполните поле`
-		input.after(errorLabel)
+		if(!input.nextElementSibling.classList.contains('label')){
+			input.after(errorLabel)
+		}
 	}else{
 		errorLabel.remove()
 	}
@@ -95,16 +106,15 @@ function validate(){
 			select.nextElementSibling.remove()
 		}
 		select.classList.remove('error')
-	})	
-	
+	})		
 }
-let dataBaseUsers = []
+
 const getUsers = () => {
 	axios.get(postLinkSheets)
 		.then((response) => {
 			dataBaseUsers = response.data.users
 			dataBaseUsers.forEach(user => {
-				let userFullName = user.surname + ' ' + user.name + ' ' + user.lastname
+				let userFullName = user.surname.trim() + ' ' + user.name.trim() + ' ' + user.lastname.trim()
 				baseUsers.push(userFullName.toLowerCase())
 			})
 		})
@@ -115,3 +125,4 @@ getUsers()
 
 
 // сделать ограничения на 100 человек на курс
+// доделать вставку информации о курсах по выбранному select

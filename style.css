@@ -41,6 +41,9 @@ input, select{
 input:hover, select:hover{
 	box-shadow: 5px 5px 5px black;
 }
+.infoBlock{
+	font-size: 12px;
+}
 button{
 	width: 30%;
     padding: 10px 15px;

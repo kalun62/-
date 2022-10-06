@@ -4,7 +4,8 @@ const postLinkSheets = 'https://script.google.com/macros/s/AKfycbwkxhH79iYWUS-AN
 	sendFormBtn = document.querySelector('button'),
 	form = document.querySelector('form'),
 	inputs = document.querySelectorAll('input'),
-	select = document.querySelector('select')
+	select = document.querySelector('select'),
+	infoBlock = document.querySelector('.infoBlock')
 	
 let baseUsers = []
 let dataBaseUsers = []
@@ -48,8 +49,17 @@ form.addEventListener('submit', function(e){
 })
 
 function infoCourses(){
+
 	select.addEventListener('change', function(){
-		// доделать заполнение информации
+		let val = select.value
+		val === 'школа'
+		? infoBlock.innerHTML = 'Информация о курсе школы'
+		: val === 'умтифсп'
+		? infoBlock.innerHTML = 'Информация о курсе умтифсп'
+		: val === 'дицаик'
+		? infoBlock.innerHTML = 'Информация о курсе Дицаик'
+		: val === 'аллея мастеров'
+		? infoBlock.innerHTML = 'Информация о курсе Аллея мастеров' : ''
 	})
 }
 infoCourses()

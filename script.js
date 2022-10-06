@@ -30,9 +30,6 @@ form.addEventListener('submit', function(e){
 				errorLabels(input)
 				if(input.nextElementSibling.classList.contains('label')){
 					input.nextElementSibling.innerText = '* Такой пользователь уже существует'
-					if(window.innerWidth < 768){
-						input.nextElementSibling.style.left = '14%'
-					}	
 				}
 			})
 		}else{

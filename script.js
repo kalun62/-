@@ -56,7 +56,10 @@ function infoCourses(){
 		: val === 'дицаик'
 		? infoBlock.innerHTML = 'Информация о курсе Дицаик'
 		: val === 'аллея мастеров'
-		? infoBlock.innerHTML = 'Информация о курсе Аллея мастеров' : ''
+		? infoBlock.innerHTML = 'Информация о курсе Аллея мастеров' 
+		: val === 'default'
+		? infoBlock.innerHTML = '' 
+		: ''
 	})
 }
 infoCourses()

@@ -222,139 +222,139 @@ let robot = [], phisic = [], ecology = [], sledopit = [], familyPlay = [], satel
 		switch (item) {
 			case 'Семейная студия робототехники «Космическая Одиссея»':
 				robot.push(item)
-				if(robot.length > 20){
+				if(robot.length >= 20){
 					document.querySelector(`.${selector} .robot`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Семейная лаборатория «Физика вокруг нас»':
 				phisic.push(item)
-				if(phisic.length > 20){
+				if(phisic.length >= 20){
 					document.querySelector(`.${selector} .phisic`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Эко-студия «Экология – дело каждого»':
 				ecology.push(item)
-				if(ecology.length > 20){
+				if(ecology.length >= 20){
 					document.querySelector(`.${selector} .ecology`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Семейная студия логики и экспериментов «Следопыт»':
 				sledopit.push(item)
-				if(sledopit.length > 20){
+				if(sledopit.length >= 20){
 					document.querySelector(`.${selector} .sledopit`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Площадка «Семейная игротека»':
 				familyPlay.push(item)
-				if(familyPlay.length > 20){
+				if(familyPlay.length >= 20){
 					document.querySelector(`.${selector} .familyPlay`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Искусственные спутники Земли и Ваш ребенок':
 				satellite.push(item)
-				if(satellite.length > 15){
+				if(satellite.length >= 15){
 					document.querySelector(`.${selector} .satellite`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Мой ребенок – будущий летчик':
 				avia.push(item)
-				if(avia.length > 15){
+				if(avia.length >= 15){
 					document.querySelector(`.${selector} .avia`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Шаг в астрономию':
 				astronomy.push(item)
-				if(astronomy.length > 15){
+				if(astronomy.length >= 15){
 					document.querySelector(`.${selector} .astronomy`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Роботы и ваш ребенок':
 				robotsAndChild.push(item)
-				if(robotsAndChild.length > 15){
+				if(robotsAndChild.length >= 15){
 					document.querySelector(`.${selector} .robotsAndChild`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case '3Д графика для всей семьи':
 				graphic.push(item)
-				if(graphic.length > 14){
+				if(graphic.length >= 14){
 					document.querySelector(`.${selector} .graphic`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Разреши себе небо':
 				sky.push(item)
-				if(sky.length > 11){
+				if(sky.length >= 11){
 					document.querySelector(`.${selector} .sky`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Стрелковый спорт':
 				shooting.push(item)
-				if(shooting.length > 15){
+				if(shooting.length >= 15){
 					document.querySelector(`.${selector} .shooting`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Поход как вид семейного отдыха':
 				tracking.push(item)
-				if(tracking.length > 45){
+				if(tracking.length >= 45){
 					document.querySelector(`.${selector} .tracking`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Зарядка на кроватке':
 				charging.push(item)
-				if(charging.length > 15){
+				if(charging.length >= 15){
 					document.querySelector(`.${selector} .charging`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Плавать – это здорово':
 				swimming.push(item)
-				if(swimming.length > 10){
+				if(swimming.length >= 10){
 					document.querySelector(`.${selector} .swimming`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Игра – шаг за шагом':
 				play.push(item)
-				if(play.length > 45){
+				if(play.length >= 45){
 					document.querySelector(`.${selector} .play`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case '«Тряпичный оберег»':
 				totem.push(item)
-				if(totem.length > 15){
+				if(totem.length >= 15){
 					document.querySelector(`.${selector} .totem`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case '«Орлёнок». Вкус приключений»':
 				orlyonok.push(item)
-				if(orlyonok.length > 15){
+				if(orlyonok.length >= 15){
 					document.querySelector(`.${selector} .orlyonok`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case '«Море на моём листе»':
 				sea.push(item)
-				if(sea.length > 15){
+				if(sea.length >= 15){
 					document.querySelector(`.${selector} .sea`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case '«Делюсь теплом своего сердца»':
 				hearth.push(item)
-				if(hearth.length > 15){
+				if(hearth.length >= 15){
 					document.querySelector(`.${selector} .hearth`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case '«Скейтч зарисовки»':
 				skeytch.push(item)
-				if(skeytch.length > 15){
+				if(skeytch.length >= 15){
 					document.querySelector(`.${selector} .skeytch`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case '«Ленточный декор»':
 				decor.push(item)
-				if(decor.length > 15){
+				if(decor.length >= 15){
 					document.querySelector(`.${selector} .decor`).setAttribute('disabled', 'disabled')
 				}
 				break;
 			case 'Мужской клуб «Сильные духом»':
 				menClub.push(item)
-				if(menClub.length > 25){
+				if(menClub.length >= 25){
 					document.querySelector(`.${selector} .menClub`).setAttribute('disabled', 'disabled')
 				}
 				break;

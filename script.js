@@ -81,46 +81,46 @@ form.addEventListener('submit', function(e){
 	}
 })
 
-function choiceCourse(){
-	let timeInput_1 = document.querySelector('.time_1')
-	let timeInput_2 = document.querySelector('.time_2')
-	let timeInput_3 = document.querySelector('.time_3')
-															// доделать удаление при выбранном пункте
-		let options_1 = Array.from(timeInput_1.children)
-		let options_2 = Array.from(timeInput_2.children)
-		let options_3 = Array.from(timeInput_3.children)
+// function choiceCourse(){
+// 	let timeInput_1 = document.querySelector('.time_1')
+// 	let timeInput_2 = document.querySelector('.time_2')
+// 	let timeInput_3 = document.querySelector('.time_3')
+// 															// доделать удаление при выбранном пункте
+// 		let options_1 = Array.from(timeInput_1.children)
+// 		let options_2 = Array.from(timeInput_2.children)
+// 		let options_3 = Array.from(timeInput_3.children)
 
-		function changeCourse(elem, option_1, option_2){
-			let prevCourse
-			console.log(prevCourse);
-			elem.addEventListener('change', function(){
-				let selected = elem.value
+// 		function changeCourse(elem, option_1, option_2){
+// 			let prevCourse
+// 			console.log(prevCourse);
+// 			elem.addEventListener('change', function(){
+// 				let selected = elem.value
 				
-				option_1.forEach(item => {
-					if(selected === item.innerHTML){
-						item.style.display = 'none'
-						// prevCourse.style.display = 'none'
-					}else{
-						item.style.display = 'block'
-					}
-				})
-				option_2.forEach(item => {
-					if(selected === item.innerHTML){
-						item.style.display = 'none'
-						// prevCourse.style.display = 'none'
-					}else{
-						item.style.display = 'block'
-					}
-				})
+// 				option_1.forEach(item => {
+// 					if(selected === item.innerHTML){
+// 						item.style.display = 'none'
+// 						// prevCourse.style.display = 'none'
+// 					}else{
+// 						item.style.display = 'block'
+// 					}
+// 				})
+// 				option_2.forEach(item => {
+// 					if(selected === item.innerHTML){
+// 						item.style.display = 'none'
+// 						// prevCourse.style.display = 'none'
+// 					}else{
+// 						item.style.display = 'block'
+// 					}
+// 				})
 			
-			})
-		}
+// 			})
+// 		}
 
-		changeCourse(timeInput_1, options_2, options_3)
-		changeCourse(timeInput_2, options_1, options_3)
-		changeCourse(timeInput_3, options_2, options_1)
-}
-choiceCourse()
+// 		changeCourse(timeInput_1, options_2, options_3)
+// 		changeCourse(timeInput_2, options_1, options_3)
+// 		changeCourse(timeInput_3, options_2, options_1)
+// }
+// choiceCourse()
 
 function finalWindow(){
 	let formWidth = form.getBoundingClientRect().width

@@ -8,18 +8,32 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="text-wrapper">
+		<p>Чтобы составить свою собственную образовательную траекторию движения по тематическим площадкам «Интересы родителей – увлечение детей: творчество, физическая культура и спорт, туризм, наука, техника», Вам необходимо:<br>
+			1.	Написать свою фамилию, имя и отчество. <br>
+			2.	На каждый временной промежуток выбрать из выпадающего списка одну тематическую площадку. <br>
+			Внимание! Количество участников на каждой тематической площадке ограничено! Если тематическая площадка в списке отображается серым цветом и не выбирается – это значит, что количество участников на данный промежуток времени набрано. <br>
+			3.	Проверить информацию, сделать скрин экрана, чтобы не забыть свою траекторию движения, после чего нажать кнопку отправить.
+		</p>
+	</div>
 	<div class="form-wrapper">
 		<form>
 			<input autocomplete="off" type="text" placeholder="Фамилия" name="surname">
 			<input autocomplete="off" type="text" placeholder="Имя" name="name">
 			<input autocomplete="off" type="text" placeholder="Отчество" name="lastname">
 
-			<select name="course">
-				<option value="default">выберите курс</option>
-				<option value="школа">Школа</option>
-				<option value="умтифсп">УМТиФСП</option>
-				<option value="дицаик">ДИЦАиК</option>
-				<option value="аллея мастеров">Аллея мастеров</option>
+		
+			<span class="time">9.30-11.00</span>
+			<select name="time_1" class="time_1">
+				
+			</select>
+			<span class="time">11.30-13.00</span>
+			<select name="time_2" class="time_2">
+			
+			</select>
+			<span class="time">16.00-17.30</span>
+			<select name="time_3" class="time_3">
+		
 			</select>
 			<div class="infoBlock"></div>
 			<button>Отправить</button>

@@ -5,6 +5,18 @@
 }
 body{
 	height: 100vh;
+	background-color: #1a1a1a;
+}
+.text-wrapper{
+	width: 90%;
+	margin: 0 auto;
+	background-color: #1a1a1a;
+	margin-top: 50px;
+}
+.text-wrapper p{
+	color: white;
+	font-size: 18px;
+	line-height: 1.5rem;
 }
 .form-wrapper{
 	width: 100%;
@@ -13,6 +25,7 @@ body{
     justify-content: center;
     align-items: center;
 	background-color: #1a1a1a;
+	margin-top: 20px;
 }
 form{
 	width: 80%;
@@ -40,6 +53,13 @@ input, select{
 }
 input:hover, select:hover{
 	box-shadow: 5px 5px 5px black;
+}
+.time{
+	color: #fff;
+	display: block;
+}
+.time_3 option:last-child{
+	display: none;
 }
 .infoBlock{
 	font-size: 12px;

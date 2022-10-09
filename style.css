@@ -18,14 +18,16 @@ body{
 	font-size: 18px;
 	line-height: 1.5rem;
 }
+.divider{
+	height: 30px;
+}
 .form-wrapper{
 	width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 	background-color: #1a1a1a;
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 form{
 	width: 80%;

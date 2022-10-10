@@ -62,6 +62,7 @@ input:hover, select:hover{
 .time{
 	color: #fff;
 	display: block;
+	margin-bottom: 5px;
 }
 .time_3 option:last-child{
 	display: none;

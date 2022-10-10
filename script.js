@@ -28,19 +28,19 @@ const courses = () => {
 							<option class="avia" value="Мой ребенок – будущий летчик">Мой ребенок – будущий летчик</option>
 							<option class="astronomy" value="Шаг в астрономию">Шаг в астрономию</option>
 							<option class="robotsAndChild" value="Роботы и ваш ребенок">Роботы и ваш ребенок</option>
-							<option class="graphic" value="3Д графика для всей семьи">3Д графика для всей семьи</option>
+							<option class="graphic" value="3Д графика для всей семьи">3D-графика для всей семьи</option>
 							<option class="sky" value="Разреши себе небо">Разреши себе небо</option>
 							<option class="shooting" value="Стрелковый спорт">Стрелковый спорт</option>
 							<option class="tracking" value="Поход как вид семейного отдыха">Поход как вид семейного отдыха</option>
 							<option class="charging" value="Зарядка на кроватке">Зарядка на кроватке</option>
 							<option class="swimming" value="Плавать – это здорово">Плавать – это здорово</option>
 							<option class="play" value="Игра – шаг за шагом">Игра – шаг за шагом</option>
-							<option class="totem" value="«Тряпичный оберег»">«Тряпичный оберег»</option>
-							<option class="orlyonok" value="«Орлёнок». Вкус приключений»">«Орлёнок». Вкус приключений»</option>
-							<option class="sea" value="«Море на моём листе»">«Море на моём листе»</option>
-							<option class="hearth" value="«Делюсь теплом своего сердца»">«Делюсь теплом своего сердца»</option>
-							<option class="skeytch" value="«Скейтч зарисовки»">«Скейтч зарисовки»</option>
-							<option class="decor" value="«Ленточный декор»">«Ленточный декор»</option>
+							<option class="totem" value="«Тряпичный оберег»">Тряпичный оберег</option>
+							<option class="orlyonok" value="«Орлёнок». Вкус приключений»">Орлёнок. Вкус приключений</option>
+							<option class="sea" value="«Море на моём листе»">Море на моём листе</option>
+							<option class="hearth" value="«Делюсь теплом своего сердца»">Делюсь теплом своего сердца</option>
+							<option class="skeytch" value="«Скейтч зарисовки»">Скейтч зарисовки</option>
+							<option class="decor" value="«Ленточный декор»">Ленточный декор</option>
 							<option class="menClub" value="Мужской клуб «Сильные духом»">Мужской клуб «Сильные духом»</option>
 							`
 	})	

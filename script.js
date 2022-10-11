@@ -59,6 +59,9 @@ form.addEventListener('submit', function(e){
 		const formData = new FormData(form)
 		const data = Object.fromEntries(formData.entries())
 		let fullName = data.surname.trim() + ' ' + data.name.trim() + ' ' + data.lastname.trim()
+		let firstCourse = data.time_1
+		let secondCourse = data.time_2
+		let thirdCourse = data.time_3
 
 		if(baseUsers.includes(fullName.toLowerCase())){
 			inputs.forEach(input => {
@@ -75,8 +78,9 @@ form.addEventListener('submit', function(e){
 					input.nextElementSibling.remove()
 				}
 			})
+			console.log(data);
 			axios.post(LinkSheet, formData)	
-			finalWindow()
+			finalWindow(firstCourse, secondCourse, thirdCourse)
 		}
 	}
 })
@@ -113,13 +117,20 @@ function choiceCourse(){
 }
 choiceCourse()
 
-function finalWindow(){
+function finalWindow(one, two, three){
 	let formWidth = form.getBoundingClientRect().width
 	let formHeight = form.getBoundingClientRect().height
 	form.style.width = formWidth + 'px'
 	form.style.height = formHeight + 'px'
 	form.classList.add('finale')
-	form.innerHTML = `<div>Спасибо!</div>`
+	form.innerHTML = `<div class="thanks-wrap">
+						<div class="thanks">Вы выбрали курсы:</div>
+						<div class="course"><span class="time">9.30 - 11.00</span>${one}</div>
+						<div class="course"><span class="time">11.30 - 13.00</span>${two}</div>
+						<div class="course"><span class="time">16.00 - 17.30</span>${three}</div>
+					  </div>	
+					  <span class="reminder">Не забудьте заскринить данное окно</span>		
+					`
 }
 
 function errorLabels(input) {

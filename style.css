@@ -40,6 +40,9 @@ form{
     border-radius: 15px;
 	border: 1px solid #333;
     box-shadow: 5px 5px 5px black;
+	background: rgb(18,18,18);
+	background: linear-gradient(135deg, rgba(18,18,18,1) 0%, rgba(47,47,47,1) 82%, rgba(26,26,26,1) 100%);
+
 }
 form div{
 	color: white;
@@ -124,6 +127,8 @@ button:hover{
     justify-content: center;
     align-items: center;
     padding: 0;
+	background: rgb(26,26,26);
+	background: linear-gradient(135deg, rgba(18,18,18,1) 0%, rgba(81,81,81,1) 64%, rgba(26,26,26,1) 100%);
 }
 .reminder{
 	position: absolute;

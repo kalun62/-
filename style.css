@@ -58,7 +58,7 @@ form div{
     border-radius: 5px;
     margin: 20px 0;
     background: #383838;
-	padding: 5px;
+	padding: 10px 5px;
 }
 input, select{
 	width: 80%;
@@ -82,7 +82,8 @@ input:hover, select:hover{
 }
 .course .time{
 	border-bottom: 1px solid white;
-	margin: 0 20px;
+	margin: 5px 20px;
+	padding-bottom: 5px;
 }
 .time_3 option:last-child{
 	display: none;

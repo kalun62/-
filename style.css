@@ -5,19 +5,42 @@
 }
 body{
 	height: 100vh;
-	background-color: #1a1a1a;
+	background-color: rgb(248 248 248);
 	font-family: 'Roboto', sans-serif;
+}
+.logo-wrapper{
+	width: 100%;
+}
+.logo{
+	max-width: 100%;
+}
+.logo2{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: -20px;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4NCiAgPHBhdGggb3BhY2l0eT0iLjMiIGQ9Ik03Ny44NTEgNTUuMDkybDcuODYxLTYuMDg4IDcuODYxIDYuMDg4IDEuNDI3LTEuMDk4LTkuMjg4LTcuMTQ4LTkuMjg4IDcuMTQ4ek04Mi44MzIgNDQuNjE2bC02Ljg3IDUuMzJ2Mi4xNThsOC4yOTUtNi4zODN6TTE3LjE2NiA0NC42NWw2Ljg3MSA1LjMyMXYyLjE1OGwtOC4yOTUtNi4zODN6TTYxLjggNDMuMTE0aC0yLjg2MWwtOC45MzkgNi45MjMtOC45MzktNi45MjNoLTIuODYxbDExLjggOS4wODF6TTI1LjkyNiA1NS4wOTJsNy44NjEtNi4wODggNy44NiA2LjA4OCAxLjQyOC0xLjA5OC05LjI4OC03LjE0OC05LjI4OSA3LjE0OHpNMzAuOTA3IDQ0LjYxNmwtNi44NyA1LjMydjIuMTU4bDguMjk0LTYuMzgzek03NS41MDEgNTMuOTk0bC05LjI4OC03LjE0OC05LjI4OCA3LjE0OCAxLjQyOCAxLjA5OCA3Ljg2LTYuMDg4IDcuODYgNi4wODh6TTY5LjA5MyA0NC42MTZsLTEuNDI0IDEuMDk1IDguMjkzIDYuMzg0di0yLjE1OHpNMjMuNTc2IDUzLjk5NGwtOS4yODgtNy4xNDgtOS4yODggNy4xNDggMS40MjcgMS4wOTggNy44NjEtNi4wODggNy44NiA2LjA4OHoiLz4NCjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12rem;
 }
 .text-wrapper{
 	width: 90%;
 	margin: 0 auto;
-	background-color: #1a1a1a;
-	margin-top: 50px;
 }
 .text-wrapper p{
-	color: white;
-	font-size: 18px;
-	line-height: 2rem;
+	color: black;
+	font-size: 16px;
+	line-height: 1.5rem;
+}
+.text-wrapper p:nth-child(3), .text-wrapper p:nth-child(5){
+	color: #8c1cb1;
+	font-weight: bold;
+}
+.text-wrapper p:nth-child(7){
+	color: #575757;
+	font-size: 14px;
+	line-height: 1rem;
 }
 .divider{
 	height: 30px;
@@ -27,7 +50,6 @@ body{
 	width: 100%;
     display: flex;
     justify-content: center;
-	background-color: #1a1a1a;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -36,39 +58,44 @@ form{
 	height: fit-content;
 	text-align: center;
 	padding: 20px;
+	background: #fafafa;
     padding-top: 50px;
     border-radius: 15px;
-	border: 1px solid #333;
-    box-shadow: 5px 5px 5px black;
-	background: rgb(18,18,18);
-	background: linear-gradient(135deg, rgba(18,18,18,1) 0%, rgba(47,47,47,1) 82%, rgba(26,26,26,1) 100%);
-
+	border: 3px solid #8c1cb1;
 }
 form div{
-	color: white;
+	color: black;
 	font-size: 30px;
 }
-
 .thanks-wrap{
+	position: absolute;
+	top: 45px;
 	width: 90%;
+	color: black;
+}
+.thanks-wrap .course:nth-child(4){
+	margin-bottom: 0;
 }
 .thanks{
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .course{
-	border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 20px 0;
-    background: #383838;
+	width: 80%;
+	border: 2px solid #8c1cb1;
+    border-radius: 15px;
+	margin: 0 auto;
+    margin-bottom: 25px;
+    background: #f1f1f1;
 	padding: 10px;
 }
+
 input, select{
 	width: 80%;
 	padding: 10px 15px;
 	margin-bottom: 20px;
-	background: #141414;
-    color: #6c93a7;
+	outline: none;
+    color: black;
     border: 1px solid #333;
 	border-radius: 5px;
 	transition: .3s;
@@ -76,15 +103,15 @@ input, select{
 	font-size: 16px;
 }
 input:hover, select:hover{
-	box-shadow: 5px 5px 5px black;
+	box-shadow: 2px 2px 5px black;
 }
 .time{
-	color: #fff;
+	color: #000;
 	display: block;
 	margin-bottom: 5px;	
 }
 .course .time{
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #8c1cb1;
 	margin: 5px 20px;
 	padding-bottom: 5px;
 }
@@ -100,7 +127,8 @@ button{
     border-radius: 13px;
     outline: none;
     border: none;
-    color: black;
+    color: #fff;
+	background: #8c1cb1;
 	cursor: pointer;
 	transition: .3s;
 	font-size: 16px;
@@ -108,7 +136,7 @@ button{
 	margin-top: 10px;
 }
 button:hover{
-	background-color: #141414;
+	background-color: #5d0d78;
 	color: white;
 	box-shadow: 0px 0px 10px white;
 }
@@ -127,13 +155,10 @@ button:hover{
     justify-content: center;
     align-items: center;
     padding: 0;
-	background: rgb(26,26,26);
-	background: linear-gradient(135deg, rgba(18,18,18,1) 0%, rgba(81,81,81,1) 64%, rgba(26,26,26,1) 100%);
 }
 .reminder{
-	position: absolute;
     bottom: 20px;
-    color: red;
+    color: rgb(9, 9, 9);
 	font-size: 14px;
 }
 
@@ -155,6 +180,10 @@ button:hover{
 	}
 	.course{
 		font-size: 20px;
+		width: 90%;
+	}
+	.logo2{
+		bottom: 0;
 	}
 	
 }

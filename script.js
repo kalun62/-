@@ -128,8 +128,11 @@ function finalWindow(one, two, three){
 						<div class="course"><span class="time">9.30 - 11.00</span>${one}</div>
 						<div class="course"><span class="time">11.30 - 13.00</span>${two}</div>
 						<div class="course"><span class="time">16.00 - 17.30</span>${three}</div>
-					  </div>	
-					  <span class="reminder">Не забудьте заскринить данное окно</span>		
+						<span class="reminder">Не забудьте заскринить данное окно</span>	
+						
+					  </div>
+					  <div class="logo2"></div>	
+					  	
 					`
 }
 

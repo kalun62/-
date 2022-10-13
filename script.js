@@ -125,11 +125,10 @@ function finalWindow(one, two, three){
 	form.classList.add('finale')
 	form.innerHTML = `<div class="thanks-wrap">
 						<div class="thanks">Вы выбрали курсы:</div>
-						<div class="course"><span class="time">9.30 - 11.00</span>${one}</div>
-						<div class="course"><span class="time">11.30 - 13.00</span>${two}</div>
-						<div class="course"><span class="time">16.00 - 17.30</span>${three}</div>
+						<div class="course"><span class="time">11.45 - 13.00</span>${one}</div>
+						<div class="course"><span class="time">14.30 - 16.00</span>${two}</div>
+						<div class="course"><span class="time">16.30 - 18.00</span>${three}</div>
 						<span class="reminder">Не забудьте заскринить данное окно</span>	
-						
 					  </div>
 					  <div class="logo2"></div>	
 					  	

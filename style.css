@@ -115,9 +115,6 @@ input:hover, select:hover{
 	margin: 5px 20px;
 	padding-bottom: 5px;
 }
-.time_3 option:last-child{
-	display: none;
-}
 .infoBlock{
 	font-size: 12px;
 }

@@ -158,6 +158,12 @@ button:hover{
     color: rgb(9, 9, 9);
 	font-size: 14px;
 }
+.time_3{
+	display: none;
+}
+.lasttime{
+	display: none;
+}
 
 @media(max-width:768px){
 	form{

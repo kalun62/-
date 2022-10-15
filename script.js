@@ -127,7 +127,7 @@ function finalWindow(one, two, three){
 						<div class="thanks">Вы выбрали курсы:</div>
 						<div class="course"><span class="time">11.45 - 13.00</span>${one}</div>
 						<div class="course"><span class="time">14.30 - 16.00</span>${two}</div>
-						<div class="course"><span class="time">16.30 - 18.00</span>${three}</div>
+						
 						<span class="reminder">Не забудьте заскринить данное окно</span>	
 					  </div>
 					  <div class="logo2"></div>	
